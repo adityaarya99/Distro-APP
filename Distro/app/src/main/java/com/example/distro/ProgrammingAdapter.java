@@ -40,6 +40,7 @@ public class ProgrammingAdapter extends RecyclerView.Adapter<ProgrammingAdapter.
         holder.texttitle.setText(title);
         Picasso.with(techData).load(imageList.get(position)).into(holder.imgicon);
 
+
     }
 
     @Override

@@ -18,11 +18,15 @@ import java.util.List;
         RecyclerView oslist = (RecyclerView) findViewById(R.id.osystemlist);
         oslist.setLayoutManager(new LinearLayoutManager(this));
         ImageList.add(R.drawable.windows);
-        ImageList.add(R.drawable.nontech);
-        ImageList.add(R.drawable.logo);
-        ImageList.add(R.drawable.nontech);
-        ImageList.add(R.drawable.windows);
-        String[] operatingsystem = { "Windows","MacOS","Linux","Ubuntu" };
+        ImageList.add(R.drawable.macos);
+        ImageList.add(R.drawable.linux);
+        ImageList.add(R.drawable.android);
+        ImageList.add(R.drawable.msdos);
+        ImageList.add(R.drawable.solaris);
+        ImageList.add(R.drawable.symbian);
+        ImageList.add(R.drawable.ios);
+        String[] operatingsystem = { "Microsoft Windows","Apple macOS","Linux OS","Google's Android OS","MS-DOS"
+                ,"Solaris OS","Symbian OS"," iOS Mobile OS" };
         oslist.setAdapter(new ProgrammingAdapter(this,operatingsystem,ImageList));
     }
 }
