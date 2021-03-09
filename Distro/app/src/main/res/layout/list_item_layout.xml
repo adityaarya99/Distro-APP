@@ -5,22 +5,20 @@
     android:orientation="horizontal"
     android:padding="8dp">
 
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/imgicon"
-    android:src="@mipmap/ic_launcher"/>
-    <TextView
+    <ImageView
+        android:id="@+id/imgicon"
         android:layout_width="wrap_content"
-        android:id="@+id/texttitle"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="24dp"
-        android:layout_gravity="center"
-        android:paddingLeft="16dp"
-        android:text="Operating System"
+
         />
 
-
-
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:text="Operating System"
+        android:textSize="24dp" />
 </LinearLayout>
