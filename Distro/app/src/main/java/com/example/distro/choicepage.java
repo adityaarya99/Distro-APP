@@ -15,15 +15,15 @@ public class choicepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choicepage);
-     /*   LinearLayout tech1 = findViewById(R.id.tech);
+        LinearLayout tech1 = findViewById(R.id.tech);
         tech1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activity = new Intent(choicepage.this, homePage.class);
+                Intent activity = new Intent(choicepage.this, TechData.class);
                 startActivity(activity);
             }
         });
-        LinearLayout notech = findViewById(R.id.ntech);
+     /*   LinearLayout notech = findViewById(R.id.ntech);
         notech.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
