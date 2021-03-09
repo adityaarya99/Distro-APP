@@ -15,7 +15,7 @@ public class choicepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choicepage);
-        LinearLayout tech1 = findViewById(R.id.tech);
+     /*   LinearLayout tech1 = findViewById(R.id.tech);
         tech1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +30,6 @@ public class choicepage extends AppCompatActivity {
                 Intent activity1 = new Intent(choicepage.this, secondhomepage.class);
                 startActivity(activity1);
             }
-        });
+        });*/
     }
 }

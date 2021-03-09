@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Distro">
+        <activity android:name=".TPageOne"></activity>
         <activity android:name=".choicepage" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity">
