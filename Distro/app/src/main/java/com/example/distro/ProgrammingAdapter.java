@@ -1,5 +1,6 @@
 package com.example.distro;
 
+import android.app.Dialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -75,15 +76,16 @@ public class ProgrammingAdapter extends RecyclerView.Adapter<ProgrammingAdapter.
             popupMenu.show();
         }
 
+
         @Override
         public boolean onMenuItemClick(MenuItem item) {
             switch (item.getItemId()){
                 case R.id.action_popup_edit:
-                    Log.d(TAG, "onMenuItemClick: action_popup_edit @ position : " + getAdapterPosition());
+                    Log.d(TAG, "onMenuItemClick: action_popup_edit @ position : " + getAdapterPosition() );
                 return true;
 
                 case R.id.action_popup_delete:
-                    Log.d(TAG, "onMenuItemClick: action_popup_delete @ position : " + getAdapterPosition());
+                    Log.d(TAG, "onMenuItemClick: action_popup_delete @ position : " + getAdapterPosition() );
                 return true;
 
                 default:
@@ -91,6 +93,8 @@ public class ProgrammingAdapter extends RecyclerView.Adapter<ProgrammingAdapter.
             }
 
         }
+
+
     }
 
 

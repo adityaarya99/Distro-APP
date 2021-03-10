@@ -1,10 +1,14 @@
  package com.example.distro;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,5 +32,39 @@ import java.util.List;
         String[] operatingsystem = { "Microsoft Windows","Apple macOS","Linux OS","Google's Android OS","MS-DOS"
                 ,"Solaris OS","Symbian OS"," iOS Mobile OS" };
         oslist.setAdapter(new ProgrammingAdapter(this,operatingsystem,ImageList));
+
+
+
+
+
+
+
+
+
+
+
+            /*ALert Dialog    */
+
+        /*  AlertDialog alertDialog = new AlertDialog.Builder(this)
+
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle("Are you sure to Exit")
+                .setMessage("Exiting will call finish() method")
+                //set positive button
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finish();
+                    }
+                })
+                //set negative button
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(getApplicationContext(),"Nothing Happened",Toast.LENGTH_LONG).show();
+                    }
+                })
+                .show();*/
+
     }
 }
