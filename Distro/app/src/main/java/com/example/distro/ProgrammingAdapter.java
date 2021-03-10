@@ -1,9 +1,11 @@
 package com.example.distro;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -48,7 +50,9 @@ public class ProgrammingAdapter extends RecyclerView.Adapter<ProgrammingAdapter.
         return data.length;
     }
 
-    public class ProgrammingViewHolder extends RecyclerView.ViewHolder {
+
+    public class ProgrammingViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        private static final String TAG = "MyViewHolder";
         ImageView imgicon;
         TextView texttitle;
 
@@ -56,7 +60,20 @@ public class ProgrammingAdapter extends RecyclerView.Adapter<ProgrammingAdapter.
             super(itemView);
             imgicon = (ImageView) itemView.findViewById(R.id.imgicon);
             texttitle =  (TextView) itemView.findViewById(R.id.texttitle);
+            imgicon.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View v) {
+            showPopupMenu(v);
+        }
+        private void showPopupMenu(View view){
+            PopupMenu popupMenu = new PopupMenu(view.getContext(),view);
+            popupMenu.inflate(R.menu.popupmenu);
+
+            popupMenu.show();
+        }
+
     }
 
 
