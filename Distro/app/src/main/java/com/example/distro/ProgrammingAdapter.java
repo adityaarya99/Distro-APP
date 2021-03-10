@@ -2,6 +2,7 @@ package com.example.distro;
 
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -51,7 +52,7 @@ public class ProgrammingAdapter extends RecyclerView.Adapter<ProgrammingAdapter.
     }
 
 
-    public class ProgrammingViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class ProgrammingViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, PopupMenu.OnMenuItemClickListener {
         private static final String TAG = "MyViewHolder";
         ImageView imgicon;
         TextView texttitle;
@@ -70,10 +71,26 @@ public class ProgrammingAdapter extends RecyclerView.Adapter<ProgrammingAdapter.
         private void showPopupMenu(View view){
             PopupMenu popupMenu = new PopupMenu(view.getContext(),view);
             popupMenu.inflate(R.menu.popupmenu);
-
+            popupMenu.setOnMenuItemClickListener(this);
             popupMenu.show();
         }
 
+        @Override
+        public boolean onMenuItemClick(MenuItem item) {
+            switch (item.getItemId()){
+                case R.id.action_popup_edit:
+                    Log.d(TAG, "onMenuItemClick: action_popup_edit @ position : " + getAdapterPosition());
+                return true;
+
+                case R.id.action_popup_delete:
+                    Log.d(TAG, "onMenuItemClick: action_popup_delete @ position : " + getAdapterPosition());
+                return true;
+
+                default:
+                    return false;
+            }
+
+        }
     }
 
 
