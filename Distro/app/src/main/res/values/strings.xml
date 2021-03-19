@@ -3,6 +3,7 @@
     <string name="sign_up">Sign up</string>
     <string name="already_have_an_account_login"> Already Have an Account? LOGIN </string>
     <string name="don_t_have_an_account"> Don\'t have an account?      </string>
-    <string name="dialog_text">On Successful registration user is directed to login page. During login the data user provide is checked against the data in the database If data provide during login is found correct user is directed to Profile Page As the user is directed to profile his username is stored in shared preference The importance of storing the username is to keep session of logged in user so as next</string>
-    <string name="dialog_title">Dialog Box </string>
+    <string name="menu_custom_edit" />
+    <string name="menu_custom_delete" />
+
 </resources>
