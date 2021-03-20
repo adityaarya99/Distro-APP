@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.password);
         etConfirmPassword = findViewById(R.id.confirmpassword);
 
-        //Intent
+        //Intent of Second Activity
         LinearLayout activitytwo = findViewById(R.id.haveanaccount);
         activitytwo.setOnClickListener(new View.OnClickListener() {
             @Override
