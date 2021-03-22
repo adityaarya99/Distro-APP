@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Validation Id's
+
         bProceed = findViewById(R.id.proceedButton);
         etFirstName = findViewById(R.id.firstName);
         etLastName = findViewById(R.id.lastName);
