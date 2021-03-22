@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    //Validation Variables
     Button bProceed;
     EditText etFirstName, etLastName, etEmail, etPassword ,etConfirmPassword;
     boolean isAllFieldsChecked = false;
