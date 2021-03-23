@@ -11,8 +11,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-
     Button bProceed;
     EditText etFirstName, etLastName, etEmail, etPassword ,etConfirmPassword;
     boolean isAllFieldsChecked = false;
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.password);
         etConfirmPassword = findViewById(R.id.confirmpassword);
 
-        //Intent of Second Activity
+
         LinearLayout activitytwo = findViewById(R.id.haveanaccount);
         activitytwo.setOnClickListener(new View.OnClickListener() {
             @Override
